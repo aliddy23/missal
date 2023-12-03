@@ -1,0 +1,23 @@
+[
+	{
+		"id": "advent1",
+		"num": 1,
+		"name": "The First Sunday in Advent",
+		"season": "advent",
+		"rank": "sd",
+		"fast": false,
+		"abstinence": false,
+		"obligation": false,
+		"color": "violet"
+	},
+	{
+		"id": "advent2",
+		"num": 1,
+		"name": "The Second Sunday in Advent",
+		"season": "advent",
+		"rank": "sd",
+		"fast": false,
+		"abstinence": false,
+		"obligation": false
+	}
+]

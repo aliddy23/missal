@@ -1,0 +1,142 @@
+* {
+	font-family: "Sabon LT Pro";
+}
+
+.book a {
+	color: white;
+	text-decoration: none;
+}
+
+.book a:hover {
+	text-decoration: underline;
+}
+
+.book-title {
+	text-align: center;
+	padding: 5rem 36px 0 36px;
+}
+
+.book-title h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	padding-bottom: 0.75rem;
+}
+
+.book-title h2 {
+	font-size: 2rem;
+	max-width: 650px;
+	margin: auto;
+}
+
+.book-title h3 {
+	font-size: 1.75rem;
+	max-width: 650px;
+	margin: auto;
+	font-weight: normal;
+	padding-bottom: 1.5rem;
+}
+
+.book-title h4 {
+	font-size: 1.25rem;
+	max-width: 650px;
+	margin: auto;
+	font-weight: normal;
+}
+
+.book-contents {
+	text-align: center;
+}
+
+.book-contents h2 {
+	font-size: 2rem;
+	max-width: 650px;
+	margin: auto;
+}
+
+.book-contents h3 {
+	font-size: 1.5rem;
+	max-width: 650px;
+	margin: auto;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.book-contents h4 {
+	font-style: italic;
+}
+
+.book-header {
+	text-align: center;
+	padding: 5rem 36px 0 36px;
+}
+
+.book-header h1 {
+	font-size: 3rem;
+	font-weight: bold;
+	padding-bottom: 2rem;
+}
+
+.book-header h2 {
+	font-size: 1.2rem;
+	font-weight: normal;
+	font-style: italic;
+	max-width: 650px;
+	margin: auto;
+}
+
+.book-ch {
+	margin-bottom: 1rem 0;
+}
+
+.book-ch h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	max-width: 650px;
+	margin: 0 auto 8px auto;
+}
+
+.book-ch h4 {
+	font-size: 1.2rem;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+	max-width: 650px;
+	margin: 0 auto 2rem auto;
+}
+
+.book-ch p {
+	margin-bottom: 8px;
+}
+
+.book-ch i {
+	font-style: normal;
+	color: #ef5350;
+}
+
+.book-body {
+	font-size: 18px;
+}
+
+.book-body td {
+	vertical-align: top;
+}
+
+.book-body tr td {
+	padding-bottom: 6px;
+}
+
+.book-body tr td:first-child {
+	padding-right: 12px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.book-ctrl {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 12px;
+	font-family: "Roboto";
+}

@@ -1,0 +1,140 @@
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.mass-title {
+	text-align: center;
+	padding: 5rem 36px 0 36px;
+}
+
+.mass-title h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	padding-bottom: 0.75rem;
+}
+
+.mass-title h2 {
+	font-size: 2rem;
+	max-width: 650px;
+	margin: auto;
+}
+
+.mass-title h3 {
+	font-size: 1.75rem;
+	max-width: 650px;
+	margin: auto;
+	font-weight: normal;
+	padding-bottom: 1.5rem;
+}
+
+.mass-title h4 {
+	font-size: 1.25rem;
+	max-width: 650px;
+	margin: auto;
+	font-weight: normal;
+}
+
+.mass-header {
+	text-align: center;
+	padding: 5rem 36px 4rem 36px;
+}
+
+.mass-header h1 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.mass-content {
+	margin-bottom: 1rem 0;
+}
+
+.mass-content p {
+	margin: 8px 100px;
+	font-style: italic;
+	text-align: center;
+}
+
+.mass-content h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	max-width: 650px;
+	margin: 16px auto 8px auto;
+	color: #ef5350;
+}
+
+.mass-content h4 {
+	font-size: 1.2rem;
+	font-weight: normal;
+	text-align: center;
+	max-width: 650px;
+	margin: 32px auto 4px auto;
+	color: #ef5350;
+}
+
+.mass-content h5 {
+	font-size: 1rem;
+	font-style: italic;
+	text-align: center;
+	max-width: 650px;
+	margin: 12px auto 4px auto;
+}
+
+.mass-content h6 {
+	font-size: 0.75rem;
+	text-align: center;
+	max-width: 650px;
+	margin: 0px auto 16px auto;
+	color: #ef5350;
+}
+
+.mass-content tr,
+.mass-content table {
+	width: 100% !important;
+}
+
+.mass-content td {
+	vertical-align: top;
+	width: 50%;
+	padding: 3px 8px;
+}
+
+.mass-content td i {
+	color: #ef5350;
+	font-weight: bold;
+}
+
+.mass-ctrl {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 12px;
+	font-family: "Roboto";
+}
+
+.mass-note {
+	color: #e57373;
+}
+
+.mass-action:not(span) {
+	color: #64b5f6;
+}
+
+span.mass-action {
+	color: #64b5f6;
+	font-style: italic;
+}
+
+.v-icon:not(.text-red-lighten-1) {
+	margin: 10px 4px 8px 4px;
+}
+
+.v-icon.text-red-lighten-1 {
+	margin: -4px 0px 0px 0px;
+}

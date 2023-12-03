@@ -1,0 +1,14 @@
+[
+	{ "id": "advent", "num": 1, "short": "Advent", "name": "The Season of Advent" },
+	{ "id": "christmas", "num": 2, "short": "Christmas", "name": "The Season of Christmas" },
+	{ "id": "epiphany", "num": 3, "short": "Epiphany", "name": "The Season of Epiphany" },
+	{ "id": "aepiphany", "num": 4, "short": "After Epiphany", "name": "The Season After Epiphany" },
+	{ "id": "septaugesima", "num": 5, "short": "Septaugesima", "name": "The Season of Septaugesima" },
+	{ "id": "lent", "num": 6, "short": "Lent", "name": "The Season of Lent" },
+	{ "id": "passiontide", "num": 7, "short": "Passiontide", "name": "The Season of Passiontide" },
+	{ "id": "holyweek", "num": 8, "short": "Holy Week", "name": "The Season of Holy Week" },
+	{ "id": "eastertide", "num": 9, "short": "Eastertide", "name": "The Season of Eastertide" },
+	{ "id": "ascension", "num": 10, "short": "Ascension", "name": "The Season of Ascension" },
+	{ "id": "pentecost", "num": 11, "short": "Pentecost", "name": "The Season of Pentecost" },
+	{ "id": "apentecost", "num": 12, "short": "After Pentecost", "name": "The Season After Pentecost" }
+]

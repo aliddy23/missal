@@ -1,0 +1,7 @@
+{
+	"name": "DRV",
+	"integrations": {
+		"capacitor": {}
+	},
+	"type": "custom"
+}
