@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<v-container style="max-width: 500px">
+		<v-container style="max-width: 400px">
 			<v-card link to="/bible" class="mb-6">
 				<v-card-text class="text-center">
 					<v-icon :size="36" class="mb-6">mdi-book</v-icon>
