@@ -1206,7 +1206,7 @@
 							{{ mass.st_invocation[1] }}
 						</td>
 						<td>
-							{{ mass.st_invocation[s] }}
+							{{ mass.st_invocation[2] }}
 						</td>
 					</tr>
 				</table>
