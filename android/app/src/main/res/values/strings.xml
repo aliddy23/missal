@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">DRV</string>
-    <string name="title_activity_main">DRV</string>
+    <string name="app_name">Catholic</string>
+    <string name="title_activity_main">Catholic</string>
     <string name="package_name">com.aidanliddy.catholic</string>
     <string name="custom_url_scheme">com.aidanliddy.catholic</string>
 </resources>

@@ -2197,8 +2197,9 @@
 	}
 
 	function getColor() {
-		if (mass.value.color == "green") return "text-green-darken-2";
-		else if (mass.value.color == "violet") return "text-deep-purple-lighten-1";
+		if (mass.value?.color == "green") return "text-green-darken-2";
+		else if (mass.value?.color == "violet") return "text-deep-purple-lighten-1";
+		else return "text-white";
 	}
 
 	function getClass() {

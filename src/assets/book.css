@@ -125,6 +125,7 @@
 }
 
 .book-ctrl {
+	z-index: 101;
 	position: fixed;
 	top: 64px;
 	right: 0px;

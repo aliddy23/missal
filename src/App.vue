@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<header class="d-flex d-print-none pr-3" style="align-items: center">
+		<header class="d-flex d-print-none pr-3" style="align-items: center" :class="{ 'pt-10': Capacitor.isNativePlatform() }">
 			<router-link to="/">
 				<div class="d-flex ma-4" style="align-items: center">
 					<img src="@/assets/keys.svg" height="64" />
@@ -31,13 +31,20 @@
 			</div>
 		</header>
 
-		<RouterView :class="{ 'mt-8': Capacitor.isNativePlatform() }" style="margin-top: 96px" />
+		<RouterView :class="{ 'pt-10': Capacitor.isNativePlatform() }" style="margin-top: 96px" />
 	</v-app>
 </template>
 
 <script setup lang="ts">
 	import { Capacitor } from "@capacitor/core";
-	import { RouterView } from "vue-router";
+	import { watch } from "vue";
+	import { RouterView, useRoute } from "vue-router";
+
+	const route = useRoute();
+
+	watch(route, () => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	});
 </script>
 
 <style>
@@ -49,6 +56,7 @@
 	header:not(.book-ctrl) {
 		position: fixed;
 		width: 100vw;
+		z-index: 100;
 	}
 
 	@media screen and (max-width: 960px) {
