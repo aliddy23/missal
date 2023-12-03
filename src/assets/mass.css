@@ -22,10 +22,6 @@ a:hover {
 		page-break-inside: auto;
 	}
 
-	.mass-title h1,
-	.mass-title h2,
-	.mass-title h3,
-	.mass-title h4,
 	.mass-header h1,
 	.mass-content h3,
 	.mass-content h4,
@@ -37,38 +33,6 @@ a:hover {
 	.mass-contain {
 		page-break-inside: none;
 	}
-}
-
-.mass-title {
-	text-align: center;
-	padding: 0 36px 0 36px;
-}
-
-.mass-title h1 {
-	font-size: 4rem;
-	font-weight: bold;
-	padding-bottom: 0.75rem;
-}
-
-.mass-title h2 {
-	font-size: 2rem;
-	max-width: 650px;
-	margin: auto;
-}
-
-.mass-title h3 {
-	font-size: 1.75rem;
-	max-width: 650px;
-	margin: auto;
-	font-weight: normal;
-	padding-bottom: 1.5rem;
-}
-
-.mass-title h4 {
-	font-size: 1.25rem;
-	max-width: 650px;
-	margin: auto;
-	font-weight: normal;
 }
 
 .mass-header {
@@ -161,4 +125,16 @@ span.mass-action {
 
 .v-icon.text-red-lighten-1 {
 	margin: -4px 0px 0px 0px;
+}
+
+@media screen and (max-width: 960px) {
+	.mass-content p {
+		margin: 8px 32px;
+	}
+
+	.mass-header h1 {
+		font-size: 2.5rem;
+		font-weight: bold;
+		padding-bottom: 0.75rem;
+	}
 }
