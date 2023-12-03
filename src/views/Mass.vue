@@ -312,7 +312,7 @@
 				</p>
 			</section>
 
-			<section v-if="mass.introit">
+			<section v-if="mass.introit" class="mass-contain">
 				<h4>THE INTROIT</h4>
 				<p class="mass-note">The Celebrant makes the Sign of the Cross and recites the Introit antiphon.</p>
 
@@ -326,7 +326,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE KYRIE ELEISON</h4>
 				<p class="mass-note">The Celebrant joins his hands and alternates with the servers, saying:</p>
 
@@ -378,7 +378,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE GLORIA IN EXCELSIS</h4>
 				<p class="mass-note">
 					At the middle of the Altar, the Celebrant extends, elevates, and joins his hands, slightly bowing, and says the Gloria in excelsis.
@@ -423,7 +423,7 @@
 				</table>
 			</section>
 
-			<section v-if="mass.collect">
+			<section v-if="mass.collect" class="mass-contain">
 				<h4>THE COLLECT</h4>
 				<p class="mass-note">The Celebrant returns to the Missal and sings the Collect:</p>
 
@@ -442,7 +442,7 @@
 				</table>
 			</section>
 
-			<section v-if="mass.epistle">
+			<section v-if="mass.epistle" class="mass-contain">
 				<h4>THE EPISTLE</h4>
 				<p class="mass-action">Sit.</p>
 				<p class="mass-note">In Solemn Masses, the Subdeacon sings the Epistle.</p>
@@ -462,7 +462,7 @@
 				</table>
 			</section>
 
-			<section v-if="mass.gradual">
+			<section v-if="mass.gradual" class="mass-contain">
 				<h4>THE GRADUAL</h4>
 				<p class="mass-note">The Gradual is sung by the Choir, and read silently by the Celebrant.</p>
 
@@ -476,7 +476,7 @@
 				</table>
 			</section>
 
-			<section v-if="mass.alleluia">
+			<section v-if="mass.alleluia" class="mass-contain">
 				<h4>THE ALLELUIA</h4>
 				<p class="mass-note">The Alleluia sung by the Choir, and read silently by the Celebrant.</p>
 
@@ -490,7 +490,7 @@
 				</table>
 			</section>
 
-			<section v-if="mass.tract">
+			<section v-if="mass.tract" class="mass-contain">
 				<h4>THE TRACT</h4>
 				<p class="mass-note">The Tract is sung by the Choir, and read silently by the Celebrant.</p>
 
@@ -623,13 +623,13 @@
 				</p>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE SERMON</h4>
 				<p class="mass-action">Sit.</p>
 				<p class="mass-note">The Celebrant gives the Sermon.</p>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE CREDO</h4>
 				<p>
 					The Creed is said only on Sundays, feasts of the first class, feasts of the second class of our Lord, our Lady, and the Apostles, and at
@@ -945,7 +945,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE PRAYER TO THE HOLY TRINITY</h4>
 
 				<p class="mass-note">Then, bowing slightly before the center of the altar and placing his joined hands upon it, the Celebrant says:</p>
@@ -968,7 +968,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE ORATE FRATRES</h4>
 
 				<p class="mass-note">He kisses the altar and turns to the faithful. Extending and then joining his hands, he says:</p>
@@ -1001,7 +1001,7 @@
 				</table>
 			</section>
 
-			<section v-if="mass.secret">
+			<section v-if="mass.secret" class="mass-contain">
 				<h4>THE SECRET</h4>
 
 				<p class="mass-note">Then with outstretched hands, the Celebrant says the Secret in silence:</p>
@@ -1099,7 +1099,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE SANCTUS</h4>
 
 				<p class="mass-action">Kneel.</p>
@@ -1151,7 +1151,7 @@
 
 			<p class="mass-note">The Celebrant, bowing low over the Altar, begins the Canon saying silently:</p>
 
-			<section>
+			<section class="mass-contain">
 				<h5>For the Church and Ecclesiastical Authorities</h5>
 
 				<table>
@@ -1177,7 +1177,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h5>Commemoration of the Living</h5>
 
 				<table>
@@ -1196,7 +1196,7 @@
 				</table>
 			</section>
 
-			<section v-if="mass.st_invocation">
+			<section v-if="mass.st_invocation" class="mass-contain">
 				<h5>Invocation of the Saints</h5>
 
 				<table>
@@ -1211,7 +1211,7 @@
 				</table>
 			</section>
 
-			<section v-else>
+			<section v-else class="mass-contain">
 				<h5>Invocation of the Saints</h5>
 
 				<table>
@@ -1520,7 +1520,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE PATER NOSTER</h4>
 
 				<p class="mass-note">He joins his hands and says:</p>
@@ -1878,7 +1878,7 @@
 				</table>
 			</section>
 
-			<section v-if="mass.communion">
+			<section v-if="mass.communion" class="mass-contain">
 				<h4>THE COMMUNION ANTIPHON</h4>
 
 				<p class="mass-note">
@@ -1914,7 +1914,7 @@
 				</table>
 			</section>
 
-			<section v-if="mass.postcommunion">
+			<section v-if="mass.postcommunion" class="mass-contain">
 				<h4>THE POSTCOMMUNION PRAYER</h4>
 
 				<p class="mass-note">The Celebrant goes to the right side of the Altar and sings the Postcommunion:</p>
@@ -1938,7 +1938,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE DISMISSAL</h4>
 
 				<p class="mass-note">The dismissal is then sung:</p>
