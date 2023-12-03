@@ -21,7 +21,6 @@
 
 			<section>
 				<h4>THE PREPARATORY PRAYERS</h4>
-				<h6>AT THE FOOT OF THE ALTAR</h6>
 
 				<p class="mass-action">Kneel.</p>
 

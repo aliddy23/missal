@@ -1,14 +1,37 @@
 <template>
 	<v-app>
-		<v-layout>
-			<v-main :class="{ 'mt-8': Capacitor.isNativePlatform() }">
-				<div class="text-center mt-4 d-print-none">
-					<router-link to="/">Home</router-link>
+		<header class="d-flex d-print-none pr-3" style="align-items: center">
+			<router-link to="/">
+				<div class="d-flex ma-4" style="align-items: center">
+					<img src="@/assets/keys.svg" height="64" />
+					<h2 class="ml-4 hidden-sm-and-down"><i>Ecclesia Catholica</i></h2>
 				</div>
+			</router-link>
 
-				<RouterView />
-			</v-main>
-		</v-layout>
+			<v-spacer></v-spacer>
+
+			<div class="hidden-sm-and-down">
+				<router-link class="mx-2" to="/">Home</router-link>
+				<router-link class="mx-2" to="/bible">Bible</router-link>
+				<router-link class="mx-2" to="/missal">Missal</router-link>
+			</div>
+
+			<div class="hidden-lg-and-up">
+				<v-menu offset-y style="z-index: 1000">
+					<template v-slot:activator="{ props }">
+						<v-btn style="z-index: 1001" icon="mdi-menu" variant="text" v-bind="props"></v-btn>
+					</template>
+
+					<v-list density="compact" style="max-height: 50vh" class="mt-2">
+						<v-list-item title="Home" link to="/"></v-list-item>
+						<v-list-item title="The Holy Bible" link to="/bible"></v-list-item>
+						<v-list-item title="Missale Romanum" link to="/missal"></v-list-item>
+					</v-list>
+				</v-menu>
+			</div>
+		</header>
+
+		<RouterView :class="{ 'mt-8': Capacitor.isNativePlatform() }" style="margin-top: 96px" />
 	</v-app>
 </template>
 
@@ -21,5 +44,16 @@
 	html,
 	body {
 		background: #121212;
+	}
+
+	header:not(.book-ctrl) {
+		position: fixed;
+		width: 100vw;
+	}
+
+	@media screen and (max-width: 960px) {
+		header:not(.book-ctrl) {
+			background-color: #121212;
+		}
 	}
 </style>

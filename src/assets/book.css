@@ -2,18 +2,9 @@
 	font-family: "Sabon LT Pro";
 }
 
-.book a {
-	color: white;
-	text-decoration: none;
-}
-
-.book a:hover {
-	text-decoration: underline;
-}
-
 .book-title {
 	text-align: center;
-	padding: 5rem 36px 0 36px;
+	padding: 0 36px;
 }
 
 .book-title h1 {
@@ -67,7 +58,7 @@
 
 .book-header {
 	text-align: center;
-	padding: 5rem 36px 0 36px;
+	padding: 0px 36px 0 36px;
 }
 
 .book-header h1 {
@@ -135,8 +126,16 @@
 
 .book-ctrl {
 	position: fixed;
-	top: 0px;
+	top: 64px;
 	right: 0px;
 	padding: 12px;
-	font-family: "Roboto";
+	text-align: right;
+}
+
+@media screen and (max-width: 960px) {
+	.book-ctrl {
+		top: 24px;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
 }

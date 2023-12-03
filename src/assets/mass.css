@@ -1,6 +1,7 @@
 a {
 	color: white;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 a:hover {
@@ -32,7 +33,7 @@ a:hover {
 
 .mass-title {
 	text-align: center;
-	padding: 5rem 36px 0 36px;
+	padding: 0 36px 0 36px;
 }
 
 .mass-title h1 {
@@ -64,7 +65,7 @@ a:hover {
 
 .mass-header {
 	text-align: center;
-	padding: 5rem 36px 4rem 36px;
+	padding: 0px 36px 4rem 36px;
 }
 
 .mass-header h1 {
@@ -131,14 +132,6 @@ a:hover {
 .mass-content td i {
 	color: #ef5350;
 	font-weight: bold;
-}
-
-.mass-ctrl {
-	position: fixed;
-	top: 0px;
-	right: 0px;
-	padding: 12px;
-	font-family: "Roboto";
 }
 
 .mass-note {

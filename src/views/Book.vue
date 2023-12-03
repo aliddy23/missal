@@ -40,23 +40,25 @@
 		></v-btn>
 
 		<header class="book-ctrl" :class="{ 'mt-12': Capacitor.isNativePlatform() }">
+			<v-divider style="max-width: 200px; margin-left: auto" class="mt-n1 mb-3 hidden-sm-and-down"></v-divider>
+
 			<v-menu offset-y>
 				<template v-slot:activator="{ props }">
-					<v-btn v-bind="props" :text="book.short"></v-btn>
+					<a class="mx-2" v-bind="props">{{ book.short }}</a>
 				</template>
 
-				<v-list density="compact" style="max-height: 50vh">
-					<v-list-item link to="/" title="Home"></v-list-item>
+				<v-list density="compact" style="max-height: 50vh" class="mt-2">
+					<v-list-item link to="/bible" title="Contents"></v-list-item>
 					<v-list-item v-for="b in books" :key="b.id" link :to="`/bible/${b.id}`" :title="b.name"></v-list-item>
 				</v-list>
 			</v-menu>
 
 			<v-menu offset-y>
 				<template v-slot:activator="{ props }">
-					<v-btn v-bind="props" text="Chapter"></v-btn>
+					<a class="mx-2" v-bind="props">Introduction</a>
 				</template>
 
-				<v-list density="compact" style="max-height: 50vh">
+				<v-list density="compact" style="max-height: 50vh" class="mt-2">
 					<v-list-item link :to="`/bible/${route.params.book}`" @click="parseRoute()" title="Introduction"></v-list-item>
 					<v-list-item
 						v-for="ch in book.ch"
