@@ -7,6 +7,29 @@ a:hover {
 	text-decoration: underline;
 }
 
+@media print {
+	tr,
+	td {
+		page-break-inside: none;
+	}
+
+	tbody tr {
+		page-break-inside: auto;
+	}
+
+	.mass-title h1,
+	.mass-title h2,
+	.mass-title h3,
+	.mass-title h4,
+	.mass-header h1,
+	.mass-content h3,
+	.mass-content h4,
+	.mass-content h5,
+	.mass-content h6 {
+		page-break-after: avoid;
+	}
+}
+
 .mass-title {
 	text-align: center;
 	padding: 5rem 36px 0 36px;

@@ -2,7 +2,7 @@
 	<v-app>
 		<v-layout>
 			<v-main :class="{ 'mt-8': Capacitor.isNativePlatform() }">
-				<div class="text-center mt-4">
+				<div class="text-center mt-4 d-print-none">
 					<router-link to="/">Home</router-link>
 				</div>
 

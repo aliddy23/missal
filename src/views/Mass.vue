@@ -428,12 +428,12 @@
 				<h4>THE COLLECT</h4>
 				<p class="mass-note">The Celebrant returns to the Missal and sings the Collect:</p>
 
-				<h5>{{ mass.collect[0] }}</h5>
+				<h5 v-html="mass.collect[0]"></h5>
 
 				<table>
 					<tr>
-						<td>{{ mass.collect[1] }}</td>
-						<td>{{ mass.collect[2] }}</td>
+						<td v-html="mass.collect[1]"></td>
+						<td v-html="mass.collect[2]"></td>
 					</tr>
 
 					<tr>
