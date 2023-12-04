@@ -14,6 +14,7 @@
 				<router-link class="mx-2" to="/">Home</router-link>
 				<router-link class="mx-2" to="/bible">Bible</router-link>
 				<router-link class="mx-2" to="/missal">Missal</router-link>
+				<router-link class="mx-2" to="/prayers">Prayers</router-link>
 			</div>
 
 			<div class="hidden-lg-and-up">
@@ -26,6 +27,7 @@
 						<v-list-item title="Home" link to="/"></v-list-item>
 						<v-list-item title="The Holy Bible" link to="/bible"></v-list-item>
 						<v-list-item title="Missale Romanum" link to="/missal"></v-list-item>
+						<v-list-item title="Necessary Prayers" link to="/prayers"></v-list-item>
 					</v-list>
 				</v-menu>
 			</div>

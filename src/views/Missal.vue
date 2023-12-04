@@ -9,9 +9,7 @@
 		</div>
 
 		<div class="book-contents">
-			<h2>CONTENTS</h2>
-
-			<h3>PROPERS OF THE MASS</h3>
+			<h2 class="mb-4">CONTENTS</h2>
 
 			<div v-for="season in seasons" class="mb-6">
 				<h4 class="font-italic">{{ season.short }}</h4>

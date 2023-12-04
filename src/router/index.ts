@@ -33,6 +33,16 @@ const router = createRouter({
 			name: "Mass",
 			component: () => import("@/views/Mass.vue"),
 		},
+		{
+			path: "/prayers",
+			name: "Prayers",
+			component: () => import("@/views/Prayers/Index.vue"),
+		},
+		{
+			path: "/prayers/rosary",
+			name: "Rosary",
+			component: () => import("@/views/Prayers/Rosary.vue"),
+		},
 	],
 });
 
