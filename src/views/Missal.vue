@@ -1,9 +1,9 @@
 <template>
 	<v-container class="book" style="max-width: 1000px">
 		<div class="book-title">
-			<h1>MISSALE ROMANUM</h1>
-			<h3>EX DECRETO SACROSANCTI CONCILII TRIDENTINI RESTITUTUM SUMMORUM PONTIFICUM CURA RECOGNITUM</h3>
-			<h4>Latin-English Combined Ordinary and Propers <br />of the Mass of the Roman Rite, 1962</h4>
+			<h1 style="color: #ef5350">MISSALE ROMANUM</h1>
+			<h3 style="color: #ef5350">EX DECRETO SACROSANCTI CONCILII TRIDENTINI RESTITUTUM SUMMORUM PONTIFICUM CURA RECOGNITUM</h3>
+			<h4 class="font-italic">Latin-English Combined Ordinary and Propers <br />of the Mass of the Roman Rite, 1962</h4>
 
 			<v-divider class="my-12"></v-divider>
 		</div>

@@ -2,9 +2,9 @@
 	<div>
 		<v-container class="book" style="max-width: 1000px">
 			<div class="book-title">
-				<h2>THE</h2>
-				<h1>HOLY BIBLE</h1>
-				<h3>TRANSLATED FROM<br />THE LATIN VULGATE</h3>
+				<h2 style="color: #ef5350">THE</h2>
+				<h1 style="color: #ef5350">HOLY BIBLE</h1>
+				<h3 style="color: #ef5350">TRANSLATED FROM<br />THE LATIN VULGATE</h3>
 				<h4>Diligently conferred with the Hebrew, Greek,<br />and other Editions in diverse languages.</h4>
 
 				<p class="mt-8">THE OLD TESTAMENT</p>
@@ -25,11 +25,11 @@
 			</div>
 
 			<div class="book-contents">
-				<h2>CONTENTS</h2>
+				<h2 style="color: #ef5350">CONTENTS</h2>
 
 				<v-row>
 					<v-col cols="12" md="6">
-						<h3>THE OLD TESTAMENT</h3>
+						<h3 style="color: #ef5350">THE OLD TESTAMENT</h3>
 
 						<div v-for="group in oldgroups" class="mb-6">
 							<h4 class="font-italic">{{ group }}</h4>
@@ -40,7 +40,7 @@
 					</v-col>
 
 					<v-col cols="12" md="6">
-						<h3>THE NEW TESTAMENT<br />OF OUR LORD AND SAVIOR<br />JESUS CHRIST</h3>
+						<h3 style="color: #ef5350">THE NEW TESTAMENT<br />OF OUR LORD AND SAVIOR<br />JESUS CHRIST</h3>
 
 						<div v-for="group in newgroups" class="mb-6">
 							<h4 class="font-italic">{{ group }}</h4>
@@ -49,14 +49,14 @@
 							</p>
 						</div>
 
-						<h3>ADDITIONAL BOOKS</h3>
+						<h3 style="color: #ef5350">ADDITIONAL BOOKS</h3>
 
 						<p>The Prayer of Manasses King of Judah</p>
 						<p>The Third Book of Esdras</p>
 						<p>The Fourth Book of Esdras</p>
 						<p>The Prophecy of Abdias</p>
 
-						<h3>SUPPLEMENTAL MATERIAL</h3>
+						<h3 style="color: #ef5350">SUPPLEMENTAL MATERIAL</h3>
 						<p>The Preface to the Reader</p>
 						<p>Hard Words Explicated</p>
 					</v-col>
