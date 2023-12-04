@@ -145,7 +145,7 @@
 					<v-col cols="12" md="4">
 						<h4 class="ma-0 pa-0">GLORIOUS</h4>
 
-						<p class="mx-2">Wednesdays, Saturdays and Sunday’s from Easter to Advent</p>
+						<p class="mx-2">Wednesdays, Saturdays and Sundays from Easter to Advent</p>
 
 						<h5 class="text-left" v-for="(decade, index) in mysteries.joyful">
 							<i>{{ romanNumeral(index + 1) }}.</i> {{ decade.name }}
