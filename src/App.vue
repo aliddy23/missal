@@ -12,9 +12,9 @@
 
 			<div class="hidden-sm-and-down">
 				<router-link class="mx-2" to="/">Home</router-link>
-				<router-link class="mx-2" to="/bible">Bible</router-link>
-				<router-link class="mx-2" to="/missal">Missal</router-link>
-				<router-link class="mx-2" to="/prayers">Prayers</router-link>
+				<router-link :class="{ 'router-link-active': $route.fullPath.includes('bible') }" class="mx-2" to="/bible">Bible</router-link>
+				<router-link :class="{ 'router-link-active': $route.fullPath.includes('missal') }" class="mx-2" to="/missal">Missal</router-link>
+				<router-link :class="{ 'router-link-active': $route.fullPath.includes('prayers') }" class="mx-2" to="/prayers">Prayers</router-link>
 			</div>
 
 			<div class="hidden-lg-and-up">
