@@ -197,7 +197,7 @@
 			</section>
 
 			<section>
-				<h3>THE BLESSING BEFORE A MEAL</h3>
+				<h3>BLESSING BEFORE A MEAL</h3>
 
 				<table>
 					<tr>
@@ -228,7 +228,7 @@
 			</section>
 
 			<section>
-				<h3>THE GRACE AFTER A MEAL</h3>
+				<h3>GRACE AFTER A MEAL</h3>
 
 				<table>
 					<tr>

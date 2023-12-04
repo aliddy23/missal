@@ -46,7 +46,7 @@
 		></v-btn>
 
 		<header class="book-ctrl" :class="{ 'mt-12': Capacitor.isNativePlatform() }">
-			<v-divider style="max-width: 200px; margin-left: auto" class="mt-n1 mb-3 hidden-sm-and-down"></v-divider>
+			<v-divider style="max-width: 200px; margin-left: auto" class="mt-0 mb-3 hidden-sm-and-down"></v-divider>
 
 			<v-menu offset-y>
 				<template v-slot:activator="{ props }">
