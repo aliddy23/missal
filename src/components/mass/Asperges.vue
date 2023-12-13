@@ -2,12 +2,9 @@
 	<h3>THE ASPERGES</h3>
 
 	<section v-if="!vidiaquam">
-		<h4>ANTIPHON</h4>
-
 		<p class="mass-action">Stand.</p>
 		<p class="mass-note">
-			Immediately before the Sunday Sung Mass, the Celebrant intones the Asperges, which is continued by the choir. He then sprinkles the altar, the
-			clergy, and the faithful with holy water.
+			Before the Sunday Sung Mass, the Celebrant says the Asperges, while sprinkling the altar, the clergy, and the faithful with holy water.
 		</p>
 
 		<h5>Asperges me</h5>

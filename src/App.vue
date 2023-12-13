@@ -3,7 +3,7 @@
 		<header class="d-flex d-print-none pr-3" style="align-items: center" :class="{ 'pt-10': Capacitor.isNativePlatform() }">
 			<router-link to="/">
 				<div class="d-flex ma-4" style="align-items: center">
-					<img src="@/assets/keys.svg" height="64" />
+					<img src="@/assets/keys.png" height="64" />
 					<h2 class="ml-4 hidden-sm-and-down"><i>Ecclesia Catholica</i></h2>
 				</div>
 			</router-link>

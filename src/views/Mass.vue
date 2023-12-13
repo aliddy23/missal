@@ -1,13 +1,31 @@
 <template>
 	<div class="mass">
+		<section class="mass-cover">
+			<img src="@/assets/keys.png" style="width: 256px; margin: auto; margin-top: 200px" />
+			<h1 class="mt-6">THE HOLY MASS</h1>
+			<h2 v-html="mass.name" class="text-uppercase mt-2" :class="getColor()"></h2>
+			<p class="mt-3">Sunday, December 10th, 2023</p>
+		</section>
+
+		<div class="mass-break"></div>
+
+		<section class="mass-cover" style="margin-top: 256px">
+			<h4 class="font-italic mb-2">Compiled from the</h4>
+			<h1 style="color: #ef5350">MISSALE ROMANUM</h1>
+			<h3 style="color: #ef5350" class="mt-3">EX DECRETO SACROSANCTI<br />CONCILII TRIDENTINI RESTITUTUM SUMMORUM<br />PONTIFICUM CURA RECOGNITUM</h3>
+			<h4 class="font-italic mt-n1">Latin-English Ordinary and Propers <br />of the Mass of the Roman Rite, 1962</h4>
+		</section>
+
+		<div class="mass-break"></div>
+
 		<section class="mass-header">
 			<h1 class="text-uppercase" :class="getColor()" v-html="mass.name"></h1>
-			<p class="mt-2">Sunday, December 3rd, 2023</p>
+			<p class="mt-2">Sunday, December 10th, 2023</p>
 			<p class="mb-n10">{{ getClass() }}</p>
 		</section>
 
 		<v-container style="max-width: 900px" class="pt-0 mass-content">
-			<v-divider class="mb-6"></v-divider>
+			<v-divider class="mb-6 d-print-none"></v-divider>
 
 			<Asperges :vidiaquam="vidiaquam" />
 
@@ -378,7 +396,7 @@
 				</table>
 			</section>
 
-			<section class="mass-contain">
+			<section>
 				<h4>THE GLORIA IN EXCELSIS</h4>
 				<p class="mass-note">
 					At the middle of the Altar, the Celebrant extends, elevates, and joins his hands, slightly bowing, and says the Gloria in excelsis.
@@ -629,7 +647,7 @@
 				<p class="mass-note">The Celebrant gives the Sermon.</p>
 			</section>
 
-			<section class="mass-contain">
+			<section>
 				<h4>THE CREDO</h4>
 				<p>
 					The Creed is said only on Sundays, feasts of the first class, feasts of the second class of our Lord, our Lady, and the Apostles, and at
@@ -638,9 +656,6 @@
 				<p class="mass-action">Stand.</p>
 				<p class="mass-note">
 					Then standing at the middle of the altar, he extends, elevates, and joins his hands saying the Credo, and continues with joined hands. .
-				</p>
-				<p class="mass-action">
-					When Jesum Christum, and simul adorator is said bow to the Cross. At the end, at Et vitam venturi sæculi, make the Sign of the Cross.
 				</p>
 
 				<table>
@@ -698,6 +713,8 @@
 
 			<v-divider class="mb-6 mt-4"></v-divider>
 
+			<div class="mass-break"></div>
+
 			<h3>THE MASS OF THE FAITHFUL</h3>
 
 			<section v-if="mass.offertory">
@@ -722,7 +739,7 @@
 					</tr>
 				</table>
 
-				<p class="mass-note">The choir sings the Offertory Antiphon, which is recited silently by the Celebrant.</p>
+				<p class="mass-note">The choir sings the Offertory Antiphon.</p>
 
 				<h5>{{ mass.offertory[0] }}</h5>
 
@@ -1108,11 +1125,6 @@
 					The Celebrant again joins his hands, and bowing, says the Sanctus, which the choir and the faithful sing at Solemn Mass.
 				</p>
 
-				<p class="mass-note">
-					The altar bells are rung at the Sanctus, at the beginning of the Consecration, at the Elevation of the Host and the Precious Blood, and when
-					the Celebrant says the Domine, non sum dignus.
-				</p>
-
 				<div class="text-center text-red-lighten-1">
 					<v-icon>mdi-bell-outline</v-icon><v-icon>mdi-bell-outline</v-icon><v-icon>mdi-bell-outline</v-icon>
 				</div>
@@ -1147,11 +1159,13 @@
 
 			<v-divider class="mb-6 mt-4"></v-divider>
 
+			<div class="mass-break"></div>
+
 			<h3>THE CANON OF THE MASS</h3>
 
 			<p class="mass-note">The Celebrant, bowing low over the Altar, begins the Canon saying silently:</p>
 
-			<section class="mass-contain">
+			<section>
 				<h5>For the Church and Ecclesiastical Authorities</h5>
 
 				<table>
@@ -1177,7 +1191,7 @@
 				</table>
 			</section>
 
-			<section class="mass-contain">
+			<section>
 				<h5>Commemoration of the Living</h5>
 
 				<table>
@@ -1196,7 +1210,7 @@
 				</table>
 			</section>
 
-			<section v-if="mass.st_invocation" class="mass-contain">
+			<section v-if="mass.st_invocation">
 				<h5>Invocation of the Saints</h5>
 
 				<table>
@@ -1211,7 +1225,7 @@
 				</table>
 			</section>
 
-			<section v-else class="mass-contain">
+			<section v-else>
 				<h5>Invocation of the Saints</h5>
 
 				<table>
@@ -1442,7 +1456,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE FINAL DOXOLOGY AND MINOR ELEVATION</h4>
 
 				<table>
@@ -1513,7 +1527,7 @@
 						<td>FOR EVER AND EVER.</td>
 					</tr>
 
-					<tr class="text-left">
+					<tr>
 						<td><i>R.</i> Amen.</td>
 						<td><i>R.</i> Amen.</td>
 					</tr>
@@ -1651,7 +1665,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section style="break-before: always">
 				<h4>THE AGNUS DEI</h4>
 
 				<p class="mass-action">Kneel.</p>
@@ -1814,6 +1828,13 @@
 
 				<h5>The Communion of the Faithful</h5>
 
+				<p class="font-weight-bold">
+					Those attending are reminded that only baptized Catholics who are in the state of grace and have observed the fast may receive Holy
+					Communion.
+				</p>
+
+				<p class="font-weight-bold">Holy Communion is received in the kneeling position and only on the tongue. The communicant does not say Amen.</p>
+
 				<table>
 					<tr>
 						<td>Ecce Agnus Dei, ecce qui tollit peccata mundi.</td>
@@ -1838,13 +1859,6 @@
 						<td>May the Body of Our Lord Jesus Christ preserve your soul unto life everlasting. Amen.</td>
 					</tr>
 				</table>
-
-				<p class="font-weight-bold">
-					Those attending are reminded that only baptized Catholics who are in the state of grace and have observed the fast may receive Holy
-					Communion.
-				</p>
-
-				<p class="font-weight-bold">Holy Communion is received in the kneeling position and only on the tongue. The communicant does not say Amen.</p>
 			</section>
 
 			<section>
@@ -1998,7 +2012,7 @@
 				</table>
 			</section>
 
-			<section>
+			<section class="mass-contain">
 				<h4>THE LAST GOSPEL</h4>
 
 				<p class="mass-action">Stand.</p>
@@ -2072,12 +2086,9 @@
 			</section>
 
 			<section>
-				<h4>PRAYERS AFTER LOW MASS</h4>
+				<h3>PRAYERS AFTER LOW MASS</h3>
 
-				<p class="mass-note">
-					In 1884, Pope Leo XIII prescribed the recitation of several prayers after Low Mass. In 1934, Pope Pius XI ordered that these same prayers be
-					offered for the conversion of Russia. The Priest, with the faithful, recites the Hail Mary thrice, then the Hail Holy Queen:
-				</p>
+				<p class="mass-note">The Priest, with the faithful, recites the Hail Mary thrice, then the Hail Holy Queen:</p>
 
 				<h5>Ave Maria</h5>
 
@@ -2140,7 +2151,7 @@
 					</tr>
 				</table>
 
-				<h5>Sancte Michael Archangele</h5>
+				<h5 style="break-before: always">Sancte Michael Archangele</h5>
 
 				<table>
 					<tr>
@@ -2172,6 +2183,8 @@
 				</table>
 			</section>
 		</v-container>
+
+		<div class="mass-break"></div>
 	</div>
 </template>
 

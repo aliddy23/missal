@@ -39,7 +39,7 @@
 							Chrístum Dóminum nóstrum. Amen.
 						</td>
 						<td>
-							O God, Whose only begoden Son, by His life, death, and resurrection has purchased for us the rewards of eternal life; grant, we beseech
+							O God, Whose only begotten Son, by His life, death, and resurrection has purchased for us the rewards of eternal life; grant, we beseech
 							Thee, that meditating upon these mysteries of the most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain, and
 							obtain what they promise, through the same Christ our Lord. Amen.
 						</td>
@@ -123,7 +123,7 @@
 
 				<v-row>
 					<v-col cols="12" md="4">
-						<h4 class="ma-0 pa-0">JOYFUL</h4>
+						<h4 class="ma-0 pa-0 ma-auto">JOYFUL</h4>
 
 						<p class="mx-2">Mondays, Thursdays, and Sundays from Advent until the start of Lent.</p>
 
@@ -133,7 +133,7 @@
 					</v-col>
 
 					<v-col cols="12" md="4">
-						<h4 class="ma-0 pa-0">SORROWFUL</h4>
+						<h4 class="ma-0 pa-0 ma-auto">SORROWFUL</h4>
 
 						<p class="mx-2">Tuesdays, Fridays and Sundays during Lent.</p>
 
@@ -143,7 +143,7 @@
 					</v-col>
 
 					<v-col cols="12" md="4">
-						<h4 class="ma-0 pa-0">GLORIOUS</h4>
+						<h4 class="ma-0 pa-0 ma-auto">GLORIOUS</h4>
 
 						<p class="mx-2">Wednesdays, Saturdays and Sundays from Easter to Advent</p>
 
@@ -223,7 +223,7 @@
 						<td>
 							Hail, Holy Queen, Mother of Mercy, Hail our life, our sweetness and our hope. To thee do we cry, poor banished children of Eve. To thee
 							do we send up our sighs, mourning and weeping in this vale of tears. Turn then, most gracious advocate, Thine eyes of mercy toward us,
-							and aier this our exile show unto us the blessed Fruit of Thy womb, Jesus. O clement, O loving, O sweet Virgin Mary. Amen.
+							and after this our exile show unto us the blessed Fruit of Thy womb, Jesus. O clement, O loving, O sweet Virgin Mary. Amen.
 						</td>
 					</tr>
 				</table>
