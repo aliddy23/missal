@@ -137,7 +137,7 @@
 
 						<p class="mx-2">Tuesdays, Fridays and Sundays during Lent.</p>
 
-						<h5 class="text-left" v-for="(decade, index) in mysteries.joyful">
+						<h5 class="text-left" v-for="(decade, index) in mysteries.sorrowful">
 							<i>{{ romanNumeral(index + 1) }}.</i> {{ decade.name }}
 						</h5>
 					</v-col>
@@ -147,7 +147,7 @@
 
 						<p class="mx-2">Wednesdays, Saturdays and Sundays from Easter to Advent</p>
 
-						<h5 class="text-left" v-for="(decade, index) in mysteries.joyful">
+						<h5 class="text-left" v-for="(decade, index) in mysteries.glorious">
 							<i>{{ romanNumeral(index + 1) }}.</i> {{ decade.name }}
 						</h5>
 					</v-col>
@@ -264,6 +264,60 @@
 				name: "The Finding in the Temple",
 				desc: "The Blessed Virgin Mary and Saint Joseph find the Child Jesus in the Temple, discussing the Law with the teachers.",
 				passage: "Luke 2:46-47",
+			},
+		],
+		sorrowful: [
+			{
+				name: "The Agony in the Garden",
+				desc: "Jesus asks the Father to let this cup pass and He sweats drops of blood.",
+				passage: "Matthew 26:26-39",
+			},
+			{
+				name: "The Scourging at the Pillar",
+				desc: "Jesus is flogged at the pillar, given 40 lashes minus one.",
+				passage: "Matthew 27:25-26",
+			},
+			{
+				name: "The Crowning with Thorns",
+				desc: "Jesus crowned with a crown made of thorns by the Roman soldiers.",
+				passage: "Matthew 27:28-29",
+			},
+			{
+				name: "The Carrying of the Cross",
+				desc: "Jesus is made to carry His own cross to Calvary.",
+				passage: "John 19:12-18",
+			},
+			{
+				name: "The Crucifixion and Death",
+				desc: "Jesus is nailed to a cross and dies for our sins.",
+				passage: "Luke 23:45-46",
+			},
+		],
+		glorious: [
+			{
+				name: "The Resurrection of Our Lord",
+				desc: "Jesus is resurrected, He is not in the tomb when it is opened.",
+				passage: "Matthew 28:5-6",
+			},
+			{
+				name: "The Ascension into Heaven",
+				desc: "Jesus ascends into Heaven and the Apostles are amazed.",
+				passage: "Luke 24:50-51",
+			},
+			{
+				name: "The Pentecost",
+				desc: "Jesus sends the Holy Ghost upon the Apostles.",
+				passage: "Acts 2:34",
+			},
+			{
+				name: "The Assumption of Mary",
+				desc: "Mary is assumed into Heaven, like Enoch who did not see death because of his faith.",
+				passage: "Hebrews 11:5",
+			},
+			{
+				name: "The Coronation of Mary",
+				desc: "Mary is crowned Queen of Heaven and Earth by her Son, Jesus Christ.",
+				passage: "Apocalypse 11:19-12:1",
 			},
 		],
 	};
