@@ -4,23 +4,25 @@
 			<img src="@/assets/keys.png" style="width: 256px; margin: auto; margin-top: 200px" />
 			<h1 class="mt-6">THE HOLY MASS</h1>
 			<h2 v-html="mass.name" class="text-uppercase mt-2" :class="getColor()"></h2>
-			<p class="mt-3">Sunday, December 10th, 2023</p>
+			<p class="mt-2">Sunday, December 8th, 2024</p>
 		</section>
 
 		<div class="mass-break"></div>
 
-		<section class="mass-cover" style="margin-top: 256px">
+		<section class="mass-cover" style="margin-top: 200px">
 			<h4 class="font-italic mb-2">Compiled from the</h4>
 			<h1 style="color: #ef5350">MISSALE ROMANUM</h1>
 			<h3 style="color: #ef5350" class="mt-3">EX DECRETO SACROSANCTI<br />CONCILII TRIDENTINI RESTITUTUM SUMMORUM<br />PONTIFICUM CURA RECOGNITUM</h3>
-			<h4 class="font-italic mt-n1">Latin-English Ordinary and Propers <br />of the Mass of the Roman Rite, 1962</h4>
+			<h3 style="color: #ef5350" class="mb-n4 mt-1 font-italic font-weight-bold">THE ROMAN MISSAL</h3>
+			<h4 style="color: #ef5350" class="font-italic">RESTORED BY THE DECREE OF<br />THE INVIOLABLE COUNCIL OF TRENT<br />AND REVISED BY THE CARE OF THE SUPREME PONTIFF</h4>
+			<h4 class="font-italic mt-7">Latin-English Ordinary and Propers <br />of the Mass of the Roman Rite, 1962</h4>
 		</section>
 
 		<div class="mass-break"></div>
 
 		<section class="mass-header">
 			<h1 class="text-uppercase" :class="getColor()" v-html="mass.name"></h1>
-			<p class="mt-2">Sunday, December 10th, 2023</p>
+			<p class="mt-2">Sunday, December 8th, 2024</p>
 			<p class="mb-n10">{{ getClass() }}</p>
 		</section>
 
@@ -2085,10 +2087,14 @@
 				</table>
 			</section>
 
-			<section>
-				<h3>PRAYERS AFTER LOW MASS</h3>
+			<v-divider class="mb-6 mt-4"></v-divider>
 
-				<p class="mass-note">The Priest, with the faithful, recites the Hail Mary thrice, then the Hail Holy Queen:</p>
+			<div class="mass-break"></div>
+
+			<section>
+				<h3>THE PRAYERS AFTER LOW MASS</h3>
+
+				<p class="mass-note">The Priest, with the faithful, recites the Hail Mary thrice, the Hail Holy Queen, and the St. Michael prayer:</p>
 
 				<h5>Ave Maria</h5>
 

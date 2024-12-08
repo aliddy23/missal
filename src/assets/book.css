@@ -1,6 +1,6 @@
 * {
-	font-family: "Playfair Display", serif;
-	letter-spacing: 0.02rem;
+	font-family: "adobe-kis-variable", serif;
+	font-variation-settings: 'opsz' 20, 'wght' 400;
 }
 
 .book-title {
